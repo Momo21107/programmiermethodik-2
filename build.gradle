@@ -1,0 +1,34 @@
+plugins {
+    id 'application'
+    // Die folgenden beiden Plugins werden für die Integration von JavaFX benötigt
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+// Hier muss die aktuell zu startende JavaFX-Application-Klasse angegeben werden
+mainClassName = 'praktikum.aufgabe4.ZeichenEditor'
+
+repositories {
+    mavenCentral()
+}
+
+// Konfiguration von JavaFX
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+// Zum Testen wird die JUnit-Plattform verwendet
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    // JUnit
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    implementation 'org.junit.platform:junit-platform-launcher:1.9.0'
+    // Guava-Framework, wird für Vorbedingungen verwendet
+    implementation 'com.google.guava:guava:31.1-jre'
+    // JSON
+    implementation 'org.json:json:20230227'
+}

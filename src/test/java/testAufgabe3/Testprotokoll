@@ -1,0 +1,22 @@
+Testprotokoll Lastenrad Threads:
+
+                                            ---Gleiche sleeptime---
+
+1000s -> abwechselnd entnehmen/einlagern
+100s  -> abwechselnd entnehmen/einlagern
+20s   -> abwechselnd entnehmen/einlagern
+10s   -> meistens abwechselnd entnehmen/einlagern, jedoch ab und zu vertauschte Konsolenausgabe
+1s    -> manchmal abwechselnd entnehmen/einlagern, häufig vertauschte Konsolenausgabe oder mehrfache Konsolenausgabe
+
+                                            ---Unterschiedliche sleeptime---
+
+1000s/100s -> abwechselnd entnehmen/einlagern
+1000s/20s  -> abwechselnd entnehmen/einlagern
+1000s/10s  -> abwechselnd entnehmen/einlagern
+1000s/1s   -> abwechselnd entnehmen/einlagern
+100/20s    -> abwechselnd entnehmen/einlagern
+100/10s    -> abwechselnd entnehmen/einlagern
+100/1s     -> abwechselnd entnehmen/einlagern
+20/10s     -> abwechselnd entnehmen/einlagern
+20/1s      -> abwechselnd entnehmen/einlagern
+10/1s      -> meistens abwechselnd entnehmen/einlagern, jedoch ab und zu vertauschte Konsolenausgabe
